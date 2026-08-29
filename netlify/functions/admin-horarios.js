@@ -5,7 +5,13 @@ exports.handler = async (event) => {
     return { statusCode: 401, body: JSON.stringify({ error: 'No autorizado.' }) };
   }
 
-  const supabase = getSupabase();
+  let supabase;
+  try {
+    supabase = getSupabase();
+  } catch (err) {
+    console.error(err);
+    return { statusCode: 500, body: JSON.stringify({ error: err.message }) };
+  }
 
   if (event.httpMethod === 'GET') {
     try {
