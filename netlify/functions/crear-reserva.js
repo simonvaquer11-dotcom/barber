@@ -1,6 +1,6 @@
 const { getSupabase } = require('./_supabase');
 
-const PRECIOS = { corte: 10000, color: 50000 };
+const PRECIOS = { corte: 15000, color: 65000 };
 
 exports.handler = async (event) => {
   if (event.httpMethod !== 'POST') {
