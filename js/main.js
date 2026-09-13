@@ -4,7 +4,7 @@
 // que a su vez hablan con la base de datos real.
 // ===========================================
 
-const PRECIOS = { corte: 10000, color: 50000 };
+const PRECIOS = { corte: 15000, color: 65000 };
 const NOMBRE_SERVICIO = { corte: 'Corte de pelo', color: 'Color' };
 const WHATSAPP_NUMERO = '5492281462597';
 
